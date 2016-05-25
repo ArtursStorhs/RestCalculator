@@ -1,0 +1,48 @@
+<html>
+<head>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+    <!-- build:js assets/tst-scripts.js -->
+    <script src= "ConnectingFrontEndToRest.js"></script>
+    <!-- endbuild -->
+
+
+    <!-- build:css assets/tst-styles.css -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- endbuild -->
+
+
+</head>
+<body>
+<h1>Calculator</h1>
+<div ng-app="Calculator" ng-controller="CalculatorController">
+    <div class="calcbody">
+        <div class="thinborder">
+            <br> <p class="result" name="result">{{result}}</p>
+        </div>
+        <div class="calcbuttons">
+            <button class="numberbutton" type="button" ng-click="onClickSum()">+</button>
+            <button class="numberbutton" type="button" ng-click="onClickSubtract()">-</button>
+            <button class="numberbutton" type="button" ng-click="onClickDivide()">/</button>
+            <button class="numberbutton" type="button" ng-click="onClickMultiply()">&times;</button>
+            <br>
+            <button class="numberbutton" type="button" ng-click="onClickSin()"> sin </button>
+            <button class="numberbutton" type="button" ng-click="onClickCos()"> cos </button>
+            <button class="numberbutton" type="button" ng-click="onClickTan()"> tan </button>
+            <button class="numberbutton" type="button" ng-click="onClickAbs()"> |x| </button>
+            <br>
+            <button class="numberbutton" type="button" ng-click="onClickSqrt()"> &radic; </button>
+            <button class="numberbutton" type="button" ng-click="onClickPow()">x^2</button>
+            <button class="numberbutton" type="button" ng-click="onClickProc()"> % </button>
+            <button class="numberbutton" type="button" ng-click="onClickDivideONE()"> 1/x </button>
+            <br>
+            <button class="numberbutton" type="button" ng-click="onClickCalculate()">=</button>
+            <button class="clearbutton" type="button" ng-click="onClickClear()">Clear</button>
+        </div>
+    </div>
+    <br>
+   <h3>Enter Value:<input input type="text" ng-change="onChangeValue()" ng-model="firstdisplayValue"></h3>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+<web-app>
+<servlet>
+    <servlet-name>SearchingTool</servlet-name>
+    <jsp-file>/SearchingButton.jsp</jsp-file>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>SearchingTool</servlet-name>
+    <url-pattern>/search</url-pattern>
+</servlet-mapping>
+
+
+<servlet>
+    <servlet-name>outPutInformation</servlet-name>
+    <servlet-class>com.exigen.tst.web.TstServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>outPutInformation</servlet-name>
+    <url-pattern>/information</url-pattern>
+</servlet-mapping>
+
+    <servlet>
+        <servlet-name>Greetings</servlet-name>
+        <servlet-class>org.glassfish.jersey.servlet.ServletContainer</servlet-class>
+        <init-param>
+            <param-name>jersey.config.server.provider.packages</param-name>
+            <param-value>com.exigen.tst.web</param-value>
+        </init-param>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Greetings</servlet-name>
+        <url-pattern>/welcome/*</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Calculator</servlet-name>
+        <jsp-file>/index.html</jsp-file>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Calculator</servlet-name>
+        <url-pattern>/calculate</url-pattern>
+    </servlet-mapping>
+
+
+</web-app>

@@ -1,0 +1,39 @@
+h1 {
+    text-align: center;
+}
+h3 {
+    text-align: center;
+}
+.thinborder {
+    border:1px solid #ccc;
+    width:206px;
+    height:60px;
+    background:black;
+}
+.calcbuttons {
+    padding:10px;
+}
+.numberbutton {
+    width:35px;
+}
+.clearbutton {
+    width:113px;
+    background-color:green;
+    color:white;
+}
+.result {
+    background:black;
+    color:lime;
+    padding:0 10px;
+    text-align:right;
+    font-size:14px;
+}
+.calcbody {
+    margin: auto;
+    background:#306;
+    width:210px;
+    padding:10px;
+    box-shadow: 5px 5px 5px #888888;
+    border-radius:12px;
+}
+
